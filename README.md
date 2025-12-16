@@ -32,3 +32,19 @@ A GItHub egy felhőalapú platform Git repository-k tárolására és kezekléá
 
  >git --version
  >git version
+
+ ## Git alapvető parancsok
+
+ ### Lokális repository létrehozása
+
+ git init
+
+ git add .
+
+ git commit -m ""
+
+ git log
+
+git reset HEAD~1
+
+git status
