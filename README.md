@@ -45,6 +45,6 @@ A GItHub egy felhőalapú platform Git repository-k tárolására és kezekléá
 
  git log
 
-git reset HEAD~1
+ git reset HEAD~1
 
-git status
+ git status
