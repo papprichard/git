@@ -1,0 +1,20 @@
+# Mi az a GIT és GITHUB
+
+## Git
+A git egy elossztott verziókezelő rendszer, amelyet Linus Torvald fejlesztettt 20005-ban. Lehgetővé teszi:
+- Kódváltozások nyomon követését
+- Korábbi kódverziókhoz való visszatérés
+- Párhuzamos fejlesztést branch-eken
+- OffLine munka a teljes projekt történelméval
+
+## GitHub
+A GItHub egy felhőalapú platform Git repository-k tárolására és kezekléásére. Funkciói:
+- Repository hosting
+- Egyműködési eszközök (Issue, Pull Request)
+- CI/CD Integráció (GitHub Actions)
+- Projektmenedzsment (PRojects, Millentones)
+- Kód review és biztonság
+
+
+> összefoglalva</br>
+**Git** - verziókezelő eszköz a gépeden **GitHub** - online platform a repository-k tárolására
