@@ -48,3 +48,7 @@ A GItHub egy felhőalapú platform Git repository-k tárolására és kezekléá
  git reset HEAD~1
 
  git status
+
+git remote add origin https://github.com/papprichard/git.git
+git branch -M main
+git push -u origin main
