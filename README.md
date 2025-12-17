@@ -122,7 +122,3 @@ git push origin main
  > CTRL + SHIFT + P code parancsok megnyitása <br>
  > CTRL + SHIFT + V Markdown file előnézete
 
-
-teszt
-teszt2
-teszt3
