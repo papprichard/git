@@ -122,3 +122,23 @@ git push origin main
  > CTRL + SHIFT + P code parancsok megnyitása <br>
  > CTRL + SHIFT + V Markdown file előnézete
 
+
+
+ ## Branch kezelés
+ ```
+    # Branch-ek listázása
+    git branch
+    # Branch átnevezése
+    git branch (-m|-M) [<old-branch>] <new-branch>
+    # Branch létrehozása
+    git branch (-c|-C) [<old-branch>] <new-branch>
+    # Branch törlése
+    git branch (-d|-D) [-r] <branch-name>…​
+    
+    #branch váltás
+    git checkout main
+
+    #Új branchlétrehozás és váltás
+    git checkout -b program
+    
+ ```
