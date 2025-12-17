@@ -103,6 +103,11 @@ git add src/                 # Egy mappa
 
 # 3. Változások commitolása
 git commit -m "Add: új funkció leírása"
+git commit -am "Funkció leírás"
+
+# 3.a Változások elkerülése és hozzáadása a commithoz,
+    ebben az esetben a default editort használja a commit szöveg elkészítéséhez
+git commit -a
 
 # 4. Feltöltés GitHub-ra
 git push origin main
