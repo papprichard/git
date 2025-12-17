@@ -1,54 +1,121 @@
-# Mi az a GIT és GITHUB
+# Mi az a GIT és GITHub?
 
 ## Git
-A git egy elossztott verziókezelő rendszer, amelyet Linus Torvald fejlesztettt 20005-ban. Lehgetővé teszi:
-- Kódváltozások nyomon követését
-- Korábbi kódverziókhoz való visszatérés
+A git egy elosztott verziokezelő rendser, amelyet Linus Torvald fejlesztett 2005-ben. Lehetővé teszi:
+- Kódválátozások nyomon követését.
+- Korábibbi kódverziókhoz való visszatérést
 - Párhuzamos fejlesztést branch-eken
-- OffLine munka a teljes projekt történelméval
+- Offline munka a teljes projekt történelmével
 
 ## GitHub
-A GItHub egy felhőalapú platform Git repository-k tárolására és kezekléásére. Funkciói:
+A GitHub egy felhőalapú platform Git repository-k tárolására és kezelésére. Funkciói:
 - Repository hosting
 - Egyműködési eszközök (Issue, Pull Request)
 - CI/CD Integráció (GitHub Actions)
-- Projektmenedzsment (PRojects, Millentones)
+- Projektmenedzsment (Projects, Milestones)
 - Kód review és biztonság
 
+> Összefoglalva</br>
+**Git** = verziókezelő eszköz a gépeden **GitHub** = onlene platform a repository-k tárolására
 
-> összefoglalva</br>
-**Git** - verziókezelő eszköz a gépeden **GitHub** - online platform a repository-k tárolására
 
 ## Miért érdemes megtanulni?
- - Csapatmunka (Több fejlesztő dolgozhat ugyanazon a projekten)
- - Biztonság (kód biztonságos tárolása, pl nem vész el)
- - Történet (Minden változás visszakövethető)
- - Visszaállítás (Bármikor visszatérhetünk a korábbi verzióhoz)
- - Iparági standard (a legtöbb cég **elvárja** a Git ismeratét)
+
+| Szempont | Előny |
+| :--- | :--- |
+| Csapatmunka |	Több fejlesztő dolgozhat ugyanazon a projekten |
+| Biztonság | A kód biztonságosan tárolva, nem vész el |
+| Történet |	Minden változás visszakövethető |
+| Visszaállítás |	Bármikor visszatérhetsz korábbi verzióhoz |
+| Iparági standard |	A legtöbb cég elvárja a Git ismeretét |
+
+
+ # Telepítés és beállítás
+
+ ## 1. Windows
+
+ Töltsd le a telepítőt: [Letöltés](https://github.com/git-for-windows/git/releases/download/v2.52.0.windows.1/Git-2.52.0-64-bit.exe)
+
+ ## 2. Linux (ubuntu / debian)
+
+ ```
+    sudo apt update
+    sudo apt install git
+ ```
  
- ## Telepítés
 
  ### Ellenörzés
 
- >git --version
- >git version
+```
+    git --version
+    git version
+```
+ 
+## 2. GitHub fiók létrehozása
+1. Látogass el a github.com/signup oldalra
+2. Add meg az email címed (vagy használd a google fiókod és akkor az utóbbiak nem szükségesek)
+3. Válassz felhasználónevet és jelszót
+4. Erősítsd meg az email címed
+ 
 
- ## Git alapvető parancsok
+## 3. Git konfiguráció (Ezeket érdemes beállítani mi nem csináltuk meg)
+A GitHub fiókod összekapcsolása a Git-tel:
+```
+    # Felhasználónév beállítása
+    git config --global user.name "Felhasználóneved"
 
- ### Lokális repository létrehozása
+    # Email beállítása (ugyanaz, mint a GitHub-on)
+    git config --global user.email "email@example.com"
 
- git init
+    # Alapértelmezett branch neve
+    git config --global init.defaultBranch main
 
- git add .
+    # alapértelmezett editor
+    git config --global core.editor "code"
+    # Beállítások ellenőrzése
+    git config --list
+```
+ 
+# Git alapvető parancsok
 
- git commit -m ""
+ Repository létrehozása (lokális)
+```
+    # Új repository inicializálása
+    git init
 
- git log
+    # Meglévő repository klónozása
+    git clone https://github.com/user/repo.git
 
- git reset HEAD~1
+    # SSH-val klónozás
+    git clone git@github.com:user/repo.git
 
- git status
+```
 
-git remote add origin https://github.com/papprichard/git.git
-git branch -M main
-git push -u origin main
+- ## Alapvető műveletek
+```
+ # 1. Állapot ellenőrzése
+git status
+
+# 2. Fájlok hozzáadása a staging area-hoz
+git add .                    # Minden fájl
+git add filename.php         # Egy fájl
+git add src/                 # Egy mappa
+
+# 3. Változások commitolása
+git commit -m "Add: új funkció leírása"
+
+# 4. Feltöltés GitHub-ra
+git push origin main
+```
+
+- ##  Létező lokális repo hozzárendelése egy távoli repository-hoz
+```
+    git remote add origin https://github.com/szilasii/git.git
+    git branch -M main
+    git push -u origin main
+```
+ > CTRL + SHIFT + P code parancsok megnyitása <br>
+ > CTRL + SHIFT + V Markdown file előnézete
+
+
+teszt
